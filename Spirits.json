@@ -1,0 +1,463 @@
+{
+    "Keeper Of The Forbidden Wilds": [
+        {
+            "requirements": {
+                "sun": 2,
+                "fire": 1,
+                "nature": 2
+            },
+            "description": "Punish Trespassers: 2 Damage. Destroy 1 Dahan"
+        },
+        {
+            "requirements": {
+                "sun": 2,
+                "fire": 2,
+                "nature": 3
+            },
+            "description": "Punish Trespassers: +1 Damage per Sun & Nature you have"
+        },
+        {
+            "requirements": {
+                "nature": 4
+            },
+            "description": "Punish Trespassers:Split this Damage between Target Land and another 1."
+        },
+        {
+            "requirements": {
+                "sun": 2
+            },
+            "description": "Spreading Wilds: Push 1 Settler from Target land per 2 Sun you have."
+        },
+        {
+            "requirements": {
+                "nature": 1
+            },
+            "description": "Spreading Wilds: If target land has no settlers, add 1 Wilds."
+        },
+        {
+            "requirements": {
+                "nature": 3
+            },
+            "description": "Spreading Wilds: +1 Range."
+        },
+        {
+            "requirements": {
+                "air": 1
+            },
+            "description": "Spreading Wilds: +1 Range."
+        }
+    ],
+    "Lightning's Swift Strike": [
+        {
+            "requirements": {
+                "fire": 3,
+                "air": 2
+            },
+            "description": "Thundering Destruction: Destroy 1 Town"
+        },
+        {
+            "requirements": {
+                "fire": 4,
+                "air": 3
+            },
+            "description": "Thundering Destruction: You may instead destroy 1 City"
+        },
+        {
+            "requirements": {
+                "fire": 5,
+                "air": 4,
+                "water": 1
+            },
+            "description": "Thundering Destruction: Also, destroy 1 Town/City"
+        },
+        {
+            "requirements": {
+                "fire": 5,
+                "air": 5,
+                "water": 2
+            },
+            "description": "Thundering Destruction: Also, destroy 1 Town/City"
+        }
+    ],
+    "Sharp Fangs Behind The Leaves": [
+        {
+            "requirements": {
+                "wild": 2
+            },
+            "description": "Ranging Hunt: You may Gather 1 Beast"
+        },
+        {
+            "requirements": {
+                "wild": 3,
+                "nature": 2
+            },
+            "description": "Ranging Hunt: 1 Damage per Beast"
+        },
+        {
+            "requirements": {
+                "wild": 2
+            },
+            "description": "Ranging Hunt: You may Push up to 2 Beasts"
+        },
+        {
+            "requirements": {
+                "moon": 1,
+                "fire": 1,
+                "wild": 4
+            },
+            "description": "Frenzied Assault: 1 Fear 2 Damage. Remove 1 Beast"
+        },
+        {
+            "requirements": {
+                "moon": 1,
+                "fire": 2,
+                "wild": 5
+            },
+            "description": "Frenzied Assault: +1 Fear and + 1 Damage."
+        }
+    ],
+    "Bringer of Dreams and Nightmares": [
+        {
+            "requirements": {
+                "moon": 2,
+                "air": 2
+            },
+            "description": "Spirits may yet dream: Turn any face-down Fear Card face-up"
+        },
+        {
+            "requirements": {
+                "moon": 3
+            },
+            "description": "Spirits may yet dream: Target Spirit gains an Element they have at least 1 of"
+        },
+        {
+            "requirements": {
+                "moon": 1,
+                "air": 1
+            },
+            "description": "Night Terrors: 1 Fear"
+        },
+        {
+            "requirements": {
+                "moon": 2,
+                "air": 1,
+                "wild": 1
+            },
+            "description": "Night Terrors: +1 Fear"
+        },
+        {
+            "requirements": {
+                "moon": 3,
+                "air": 2,
+                "wild": 1
+            },
+            "description": "Night Terrors: +1 Fear"
+        }
+    ],
+    "Thunderspeaker": [
+        {
+            "requirements": {
+                "air": 4
+            },
+            "description": "Gather the Warriors: This power may be fast"
+        },
+        {
+            "requirements": {
+                "wild": 1
+            },
+            "description": "Gather the Warriors: Gather up to 1 Dahan per Air you have. Push up to 1 Dahan per Sun you have."
+        },
+        {
+            "requirements": {
+                "air": 4
+            },
+            "description": "Lead the Furious Assault: This power may be fast"
+        },
+        {
+            "requirements": {
+                "sun": 2,
+                "fire": 1
+            },
+            "description": "Lead the Furious Assault: Destroy 1 Town for every 2 Dahan in Target land."
+        },
+        {
+            "requirements": {
+                "sun": 4,
+                "fire": 3
+            },
+            "description": "Lead the Furious Assault: Destroy 1 City for every 3 Dahan in target land."
+        }
+    ],
+    "River Surges in Sunlight": [
+        {
+            "requirements": {
+                "sun": 1,
+                "water": 2
+            },
+            "description": "Massive Flooding: Push 1 Settler/Town"
+        },
+        {
+            "requirements": {
+                "sun": 2,
+                "water": 3
+            },
+            "description": "Massive Flooding: Instead, 2 Damage. Push up to 3 Settlers/Towns"
+        },
+        {
+            "requirements": {
+                "sun": 3,
+                "water": 4,
+                "earth": 1
+            },
+            "description": "Massive Flooding: Instead, 2 Damage to each Invader"
+        }
+    ],
+    "Vital Strength of the Earth": [
+        {
+            "requirements": {
+                "sun": 1,
+                "earth": 2,
+                "nature": 2
+            },
+            "description": "Gift of Strength: Target Spirit may repeat 1 Power Card with Energy cost of 1 or less"
+        },
+        {
+            "requirements": {
+                "sun": 2,
+                "earth": 3,
+                "nature": 2
+            },
+            "description": "Gift of Strength: Instead, the Energy cost limit is 3 or less"
+        },
+        {
+            "requirements": {
+                "sun": 2,
+                "earth": 4,
+                "nature": 4
+            },
+            "description": "Gift of Strength: Instead, the Energy cost limit is 6 or less"
+        }
+    ],
+    "Shadows Flicker like Flame": [
+        {
+            "requirements": {
+                "moon": 2,
+                "fire": 1
+            },
+            "description": "Darkness swallows the Unwary: Gather 1 Settler"
+        },
+        {
+            "requirements": {
+                "moon": 3,
+                "fire": 2
+            },
+            "description": "Darkness swallows the Unwary: Destroy up to 2 Settlers. 1 Fear per Settler destroyed"
+        },
+        {
+            "requirements": {
+                "moon": 4,
+                "fire": 3,
+                "air": 2
+            },
+            "description": "Darkness swallows the Unwary: 3 Damage. 1 Fear per Invader destroyed by this Damage. "
+        }
+    ],
+    "A Spread Of Rampant Green": [
+        {
+            "requirements": {
+                "moon": 1,
+                "nature": 2
+            },
+            "description": "Creepers tear into mortar: 1 Damage to 1 Town/City"
+        },
+        {
+            "requirements": {
+                "moon": 2,
+                "nature": 3
+            },
+            "description": "Creepers tear into mortar: Repeat this power"
+        },
+        {
+            "requirements": {
+                "moon": 3,
+                "nature": 4
+            },
+            "description": "Creepers tear into mortar: Repeat this power again"
+        },
+        {
+            "requirements": {
+                "water": 1,
+                "nature": 3
+            },
+            "description": "All-Enveloping Green: Defend 2"
+        },
+        {
+            "requirements": {
+                "water": 2,
+                "nature": 4
+            },
+            "description": "All-Enveloping Green: Instead, Defend 2"
+        },
+        {
+            "requirements": {
+                "water": 3,
+                "nature": 5,
+                "earth": 1
+            },
+            "description": "All-Enveloping Green: Also, remove 1 Blight"
+        }
+    ],
+    "Ocean's Hungry Grasp": [
+        {
+            "requirements": {
+                "moon": 1,
+                "air": 1,
+                "water": 2
+            },
+            "description": "Pound Ships to Splinters: 1 Fear"
+        },
+        {
+            "requirements": {
+                "moon": 2,
+                "air": 1,
+                "water": 3
+            },
+            "description": "Pound Ships to Splinters: + 1 Fear"
+        },
+        {
+            "requirements": {
+                "moon": 3,
+                "air": 2,
+                "water": 4
+            },
+            "description": "Pound Ships to Splinters: + 2 Fear"
+        },
+        {
+            "requirements": {
+                "water": 2,
+                "earth": 1
+            },
+            "description": "Ocean Breaks the Shore: Drown 1 Town"
+        },
+        {
+            "requirements": {
+                "water": 3,
+                "earth": 2
+            },
+            "description": "Ocean Breaks the Shore: You may instead Drown 1 City"
+        },
+        {
+            "requirements": {
+                "water": 4,
+                "earth": 3
+            },
+            "description": "Also, Drown 1 Town/City"
+        }
+    ],
+    "Serpent Slumbering Beneath the Island": [
+        {
+            "requirements": {
+                "fire": 2,
+                "water": 1,
+                "nature": 1
+            },
+            "description": "Serpent Wakes in Power: Gain 1 Energy. Other Spirits with any Absorbed Presence too."
+        },
+        {
+            "requirements": {
+                "water": 2,
+                "nature": 2,
+                "earth": 3
+            },
+            "description": "Serpent Wakes in Power: Add 1 Presence at Range 1. Other Spirits with 2 or more Absorbed Presence too"
+        },
+        {
+            "requirements": {
+                "fire": 3,
+                "water": 3,
+                "nature": 3,
+                "earth": 3
+            },
+            "description": "Serpent Wakes in Power: Gain Major Power without Forgetting. Other Spirits with 3 or more Absorbed Power too."
+        },
+        {
+            "requirements": {
+                "fire": 1,
+                "earth": 1
+            },
+            "description": "Serpent Rouses in Anger: For each Fire&Earth you have, 1 Damage to 1 Town/City"
+        },
+        {
+            "requirements": {
+                "fire": 1,
+                "earth": 1
+            },
+            "description": "Serpent Rouses in Anger: For each Fire&Earth you have, 1 Damage to 1 Town/City"
+        },
+        {
+            "requirements": {
+                "moon": 2,
+                "earth": 2
+            },
+            "description": "Serpent Rouses in Anger: For each 2 Moon&Earth you have, 2 Fear and you may Push 1 Town from target land"
+        },
+        {
+            "requirements": {
+                "moon": 5,
+                "earth": 6,
+                "fire": 6
+            },
+            "description": "Serpent Rouses in Anger: Cost 7: In every land in the game: X Damage, where X is the number of presence you have in and adjacent to that land"
+        }
+    ],
+    "Heart of the Wildfire": [
+        {
+            "requirements": {
+                "nature": 1
+            },
+            "description": "Firestorm: 1 Damage per 2 Fire you have"
+        },
+        {
+            "requirements": {
+                "nature": 3
+            },
+            "description": "Firestorm: Instead, 1 Damage per Fire you have"
+        },
+        {
+            "requirements": {
+                "fire": 4,
+                "air": 2
+            },
+            "description": "Firestorm: You may split this Power's damage among any number of lands with Blight and Presence"
+        },
+        {
+            "requirements": {
+                "fire": 7
+            },
+            "description": "Firestorm: In a land with Blight and Presence, push all Dahan. Destroy all Invaders and Beasts. 1 Blight."
+        },
+        {
+            "requirements": {
+                "fire": 4,
+                "nature": 1
+            },
+            "description": "Burned Land Regrows: If Target Land has 2 Blight or more, remove 1 Blight"
+        },
+        {
+            "requirements": {
+                "fire": 4,
+                "nature": 2
+            },
+            "description": "Burned Land Regrows: Instead, remove 1 Blight"
+        },
+        {
+            "requirements": {
+                "fire": 5,
+                "nature": 2,
+                "earth": 2
+            },
+            "description": "Burned Land Regrows: Remove another Blight"
+        }
+    ]
+    
+}

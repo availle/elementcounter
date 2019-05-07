@@ -11,8 +11,7 @@
     "expo": "^32.0.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "react-native-vector-icons": "^6.4.2",
-    "sinon": "^7.3.2"
+    "react-native-vector-icons": "^6.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

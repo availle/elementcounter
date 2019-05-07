@@ -41,7 +41,7 @@ export default class ElementComponent extends Component {
   }
   clickedOnPlus() {
     Vibration.vibrate(10)
-    this.props.elementChanged(this.state.counter +1)
+    this.props.elementChanged(this.state.counter + 1)
     this.setState(prevState => {
       return {
         counter: prevState.counter + 1
