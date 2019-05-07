@@ -1,0 +1,26 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "test": "./node_modules/mocha/bin/mocha --require babel-core/register ./**/*Spec.js",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "expo": "^32.0.0",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-vector-icons": "^6.4.2",
+    "sinon": "^7.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-expo": "^5.0.0",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
+  "private": true
+}
