@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Picker } from 'react-native';
+import { StyleSheet, FlatList, View, Picker } from 'react-native';
 import ElementComponent from './ElementComponent';
 import PowerComponent from './PowerComponent';
 import Spirits from './Spirits.json'
@@ -14,8 +14,9 @@ export default class App extends React.Component {
     this.mapSpirits = this.mapSpirits.bind(this)
     this.spirits = {}
     Object.keys(Spirits).map(spiritName => {
-      this.spirits[spiritName] = Spirits[spiritName].map(power => { 
-        return new Power(power.requirements, power.description) })
+      this.spirits[spiritName] = Spirits[spiritName].map(power => {
+        return {pow: new Power(power.requirements, power.description) }
+      })
     })
     this.state = {
       spirit: 'Thunderspeaker',
@@ -48,12 +49,17 @@ export default class App extends React.Component {
           selectedValue={this.state.spirit}
           style={{ height: 50, width: '100%' }}
           onValueChange={this.spiritChanged}>
-        {this.mapSpirits()}
+          {this.mapSpirits()}
         </Picker>
-        <View style={styles.powers}>
-          {this.mapPowers()}
-        </View>
-      </View>
+        <FlatList
+          data = {this.spirits[this.state.spirit]}
+          extraData={this.state.elements}
+          renderItem = {({item}) => {
+            return <PowerComponent power={item.pow} elements={this.state.elements}></PowerComponent>
+          }}
+          keyExtractor={(_, index) => index.toString()}
+        />
+      </View >
     );
   }
 
@@ -66,7 +72,7 @@ export default class App extends React.Component {
   mapSpirits() {
     return Object.keys(this.spirits).map((spirit, idx) => {
       return <Picker.Item key={idx} label={spirit} value={spirit} />
-     })
+    })
   }
 
   spiritChanged(spiritName) {
@@ -94,16 +100,13 @@ const styles = StyleSheet.create({
   },
   elements: {
     paddingTop: 30,
-    flex: 1,
+    flex: 0,
     flexDirection: 'row',
     backgroundColor: '#fff',
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start'
-
+    height: 165,
   },
   powers: {
     flex: 1,
-    flexGrow: 1,
     paddingLeft: 10,
     flexDirection: 'column',
     justifyContent: 'space-evenly',

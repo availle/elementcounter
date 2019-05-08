@@ -62,19 +62,18 @@ export default class ElementComponent extends Component {
 
 const styles = StyleSheet.create({
   elementDisplayed: {
-    flex: 1,
-    borderRadius: 35,
+    flex: 0,
+    borderRadius: 25,
     alignSelf:'center',
-    width: 40,
-    height: 40
+    width: 30,
+    height: 30
   },
   elementContainer: {
     flex: 1,
     flexDirection: 'column',
     backgroundColor: '#fff',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    height: 165
+    alignItems: 'center'
    },
   plusMinus: {
     flex: 1,
@@ -85,7 +84,7 @@ const styles = StyleSheet.create({
   },
   text: {
     flex: 1,
-    fontSize: 25
+    fontSize: 20
   }
 })
 // skip this line if using Create React Native App
