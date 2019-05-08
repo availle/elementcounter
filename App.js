@@ -4,6 +4,14 @@ import ElementComponent from './ElementComponent';
 import PowerComponent from './PowerComponent';
 import Spirits from './Spirits.json'
 import Power from './model/Power';
+import wilds from './assets/Wilds.gif'
+import air from './assets/Air.gif'
+import earth from './assets/Earth.gif'
+import fire from './assets/Fire.gif'
+import moon from './assets/Moon.gif'
+import water from './assets/Water.gif'
+import nature from './assets/Nature.gif'
+import sun from './assets/Sun.gif'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -19,7 +27,7 @@ export default class App extends React.Component {
       })
     })
     this.state = {
-      spirit: 'Thunderspeaker',
+      spirit: 'Serpent Slumbering Beneath the Island',
       elements: {
         sun: 0,
         moon: 0,
@@ -36,14 +44,14 @@ export default class App extends React.Component {
     return (
       <View style={styles.outerContainer}>
         <View style={styles.elements}>
-          <ElementComponent color='yellow' elementChanged={(count) => { this.elementChanged('sun', count) }}></ElementComponent>
-          <ElementComponent color='white' borderColor='black' borderWidth={0.5} elementChanged={(count) => { this.elementChanged('moon', count) }}></ElementComponent>
-          <ElementComponent color='orange' elementChanged={(count) => { this.elementChanged('fire', count) }}></ElementComponent>
-          <ElementComponent color='purple' elementChanged={(count) => { this.elementChanged('air', count) }}></ElementComponent>
-          <ElementComponent color='blue' elementChanged={(count) => { this.elementChanged('water', count) }}></ElementComponent>
-          <ElementComponent color='grey' elementChanged={(count) => { this.elementChanged('earth', count) }}></ElementComponent>
-          <ElementComponent color='green' elementChanged={(count) => { this.elementChanged('nature', count) }}></ElementComponent>
-          <ElementComponent color='red' elementChanged={(count) => { this.elementChanged('wild', count) }}></ElementComponent>
+          <ElementComponent image={sun}  elementChanged={(count) => { this.elementChanged('sun', count) }}></ElementComponent>
+          <ElementComponent image={moon}  elementChanged={(count) => { this.elementChanged('moon', count) }}></ElementComponent>
+          <ElementComponent image={fire}  elementChanged={(count) => { this.elementChanged('fire', count) }}></ElementComponent>
+          <ElementComponent image={air}  elementChanged={(count) => { this.elementChanged('air', count) }}></ElementComponent>
+          <ElementComponent image={water}  elementChanged={(count) => { this.elementChanged('water', count) }}></ElementComponent>
+          <ElementComponent image={earth}  elementChanged={(count) => { this.elementChanged('earth', count) }}></ElementComponent>
+          <ElementComponent image={nature}  elementChanged={(count) => { this.elementChanged('nature', count) }}></ElementComponent>
+          <ElementComponent image={wilds} elementChanged={(count) => { this.elementChanged('wild', count) }}></ElementComponent>
         </View>
         <Picker
           selectedValue={this.state.spirit}
@@ -53,7 +61,7 @@ export default class App extends React.Component {
         </Picker>
         <FlatList
           data = {this.spirits[this.state.spirit]}
-          extraData={this.state.elements}
+          extraData={this.state}
           renderItem = {({item}) => {
             return <PowerComponent power={item.pow} elements={this.state.elements}></PowerComponent>
           }}
@@ -108,8 +116,6 @@ const styles = StyleSheet.create({
   powers: {
     flex: 1,
     paddingLeft: 10,
-    flexDirection: 'column',
-    justifyContent: 'space-evenly',
-    alignItems: 'flex-start'
-  }
+    flexDirection: 'column'
+    }
 });

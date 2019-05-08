@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, View, StyleSheet, Text, Vibration } from 'react-native';
+import { AppRegistry, View, StyleSheet, Text, Vibration, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default class ElementComponent extends Component {
@@ -22,9 +22,9 @@ export default class ElementComponent extends Component {
           size={40}
           title='+'
         />
-        <View
+        <Image
+        source={this.props.image}
           style={styles.elementDisplayed}
-          backgroundColor={this.props.color}
           borderColor={this.props.borderColor}
           borderWidth={this.props.borderWidth}
         />
