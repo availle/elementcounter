@@ -31,10 +31,10 @@ export default class RequirementsComponent extends Component {
                     return (
                         <View key={index} style='columnContainer'>
                             <Image
-                                style={styles.elementDisplayed}
+                                style={this.props.requirements[key] > this.props.elements[key] ? styles.missingElement:styles.elementDisplayed}
                                 source={this.images[key]}
                             />
-                            <Text style={styles.text}>{Math.max(parseInt(this.props.requirements[key]) - parseInt(this.props.elements[key]), 0)}</Text>
+                            <Text style={styles.text}>{Math.min(parseInt(this.props.elements[key]) - parseInt(this.props.requirements[key]), 0)}</Text>
                             </View>
                     )
                 })}
@@ -48,6 +48,15 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         alignSelf: 'center',
         alignItems: 'center',
+        width: 25,
+        height: 25
+    },
+    missingElement: {
+        flex: 0,
+        borderRadius: 25,
+        alignSelf: 'center',
+        alignItems: 'center',
+        opacity: 0.3,
         width: 25,
         height: 25
     },
